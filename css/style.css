@@ -12,6 +12,11 @@ body {
     margin-right: 5%;
 }
 
+.cart {
+    width: 40%;
+
+}
+
 #navbar {
     width: 100vw;
     background-color: #192024;
@@ -57,3 +62,20 @@ body {
       margin-right: auto;
       margin-left: 3em;
     }
+
+.d-block {
+    margin: auto;
+    width: 20%;
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+}

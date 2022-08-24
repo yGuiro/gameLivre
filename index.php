@@ -45,7 +45,7 @@
         </a>
       </div>
       </div>
-    </main><br><br><br>
+    </main><br><br><br><hr style="border: 1px solid;">
     <!-- footer -->
     <?php include 'footer.php'; ?>
 

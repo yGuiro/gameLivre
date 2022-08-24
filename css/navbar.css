@@ -2,10 +2,6 @@
     --pink: #ff4081;
   }
 
-body {
-    background-image: url(../img/bg.jpg)
-}
-
 .logo {
     width: 15%;
     height: 20%;
@@ -62,20 +58,3 @@ body {
       margin-right: auto;
       margin-left: 3em;
     }
-
-.d-block {
-    margin: auto;
-    width: 20%;
-}
-
-p {
-    font-size: 1.2rem;
-    color: white;
-    background-color: black;
-}
-
-h5 {
-    font-size: 1.2rem;
-    color: white;
-    background-color: black;
-}

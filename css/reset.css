@@ -7,4 +7,9 @@
     border: none;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/bg.jpg)
 }

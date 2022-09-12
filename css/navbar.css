@@ -1,0 +1,61 @@
+:root {
+    --pink: #ff4081;
+  }
+
+.logo {
+    width: 10%;
+    height: 15%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.cart {
+    width: 40%;
+
+}
+
+#navbar {
+    width: 98.8vw;
+    background-color: #192024;
+    font-weight: bold;
+}    
+    ul {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 1em 0;
+    }
+  
+    li a {
+      text-decoration: none;
+      color: white;
+      padding-right: 3em;
+      position: relative;
+      transition: all ease-in-out 250ms;
+    }
+  
+    li a::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 0.4em;
+      width: 0%;
+      background-color: var(--pink);
+      bottom: -1em;
+      transition: all ease-in-out 250ms;
+    }
+  
+    li a:hover::after {
+      width: 60%;
+    }
+  
+    li a:hover {
+      color: var(--pink);
+    }
+  
+    li:first-child {
+      margin-right: auto;
+      margin-left: 3em;
+    }

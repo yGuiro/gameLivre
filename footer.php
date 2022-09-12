@@ -41,7 +41,7 @@
                                 <a href="index.html"><img src="/TCC/img/logo.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Game Livre é uma plataforma de locação e venda de jogos desenvolvida por Guilherme, Rodrigo, Carlos e Alexia como projeto para o Trabalho de conclusão de curso</p>
+                                <p>Game Livre é uma plataforma de locação e venda de jogos desenvolvida por Guilherme, Rodrigo e Carlos como projeto para o Trabalho de conclusão de curso.</p>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
-                                    <input type="text" placeholder="Email Address">
+                                    <input type="email" placeholder="Email ">
                                     <button><i class="fab fa-telegram-plane"></i></button>
                                 </form>
                             </div>

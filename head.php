@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/TCC/css/reset.css">
     <link rel="stylesheet" href="/TCC/css/footer.css">
     <link rel="stylesheet" href="/TCC/css/navbar.css">
+    <link rel="stylesheet" href="/TCC/css/login.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <!--JS-->

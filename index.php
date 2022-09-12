@@ -25,7 +25,7 @@
           </div>
           <div class="carousel-item">
           <a href="loja.php">
-            <img class="d-block" src="/TCC/img/img2.jpg" alt="Segundo Slide">
+            <img class="d-block" src="/TCC/img/img4.jpg" alt="Segundo Slide">
           </a>
           </div>
           <div class="carousel-item">

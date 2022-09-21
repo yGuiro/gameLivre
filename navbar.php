@@ -9,6 +9,4 @@
                 <li><a href="#"><img src="/TCC/img/cart.png" class="cart"></a></li>
             </ul>
         </div>
-    </header>
-
-    
+</header>

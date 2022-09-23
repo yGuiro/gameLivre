@@ -19,17 +19,17 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-          <a href="loja.php">
+          <a href="vitrine.php">
             <img class="d-block" src="/TCC/img/img1.png" alt="Primeiro Slide">
           </a>
           </div>
           <div class="carousel-item">
-          <a href="loja.php">
+          <a href="vitrine.php">
             <img class="d-block" src="/TCC/img/img4.jpg" alt="Segundo Slide">
           </a>
           </div>
           <div class="carousel-item">
-            <a href="loja.php">
+            <a href="vitrine.php">
               <img class="d-block" src="/TCC/img/img3.png" alt="Terceiro Slide">
             </a>
             <div class="carousel-caption d-none d-md-block">

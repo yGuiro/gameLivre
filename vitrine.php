@@ -1,6 +1,5 @@
-<link rel="shortcut icon" href="/TCC/img/fav.png" type="image/x-icon">
+<?php include 'head.php'; ?>
 <body>
-    <?php include 'head.php'; ?>
     <?php include 'navbar.php'; ?>
     <?php include 'footer.php'; ?>
     

@@ -17,6 +17,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
     <!-- ICON -->
-    <link rel="shortcut icon" href="/TCC/img/fav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/a.png" type="image/x-icon">
     <title>Game Livre</title>
 </head>

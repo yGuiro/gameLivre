@@ -82,8 +82,8 @@
         icon: res.icon,
         title: res.title,
         text: res.text,
-        showConfirmButton: false,
-        timer: 2000
+        showConfirmButton: true,
+        // timer: 2000
       }).then(function() {
         if (res.login) {
           window.location.href = './index.php';

@@ -4,7 +4,7 @@ include './conexao.php';
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
-$result = $pdo->prepare("SELECT * FROM users WHERE email = '$email' AND senha = '$senha'");
+$result = $pdo->prepare("SELECT * FROM users WHERE Email = '$email' AND Password = '$senha'");
 $result->execute();
 
 if ($result->rowCount() > 0) {

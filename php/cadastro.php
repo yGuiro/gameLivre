@@ -14,14 +14,14 @@ if (isset($_POST['nome']) &&
         $cep = $_POST['cep'];
         $cpf = $_POST['cpf'];
                   
-        $sql = "INSERT INTO users (Nome, Email, Senha, phoneNumber, CEP, CPF) VALUES ('$nome', '$email', '$senha','$phoneNumber', '$cep', '$cpf')";
+        $sql = "INSERT INTO users (Name, Email, Password, phoneNumber, Address, CPF) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute(array($nome, $email, $senha,$phoneNumber, $cep, $cpf));
         // echo $stmt->rowCount() . " registro(s) inserido(s) com sucesso!!!";
         // echo "<script type='text/javascript'> alert('Conta criada com sucesso!!!') </script>";
         echo"<script language='javascript' type='text/javascript'>
         alert('Conta criada com sucesso!!!');window.location
-        .href='index.php';</script>";
+        .href='../login.php';</script>";
 
   }
 ?>

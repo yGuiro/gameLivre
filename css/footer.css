@@ -1,9 +1,12 @@
 ul {
     margin: 0px;
     padding: 0px;
+    width: 100vw;
+
 }
 .footer-section {
   background: #151414;
+  width: 100vw;
   position: relative;
 }
 .footer-cta {

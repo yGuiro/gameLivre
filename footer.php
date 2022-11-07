@@ -1,5 +1,3 @@
-<?php include 'head.php' ?>
-
 <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
@@ -38,7 +36,7 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="/TCC/img/logo.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.php"><img src="/TCC/img/logo.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
                                 <p>Game Livre é uma plataforma de locação e venda de jogos desenvolvida por Guilherme, Rodrigo e Carlos como projeto para o Trabalho de conclusão de curso.</p>

@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt_BR">
 <!-- head -->
@@ -6,7 +7,13 @@
 <body>
     
     <!-- navbar -->
-    <?php include 'navbar.php'; ?>
+    <?php if(isset($_SESSION['logado'])) {
+      include 'navbarlogado.php';
+    }else {
+      include 'navbar.php';
+    } 
+      // print_r($_SESSION); 
+      ?>
     
     <!-- Carrossel -->
     <br><br>
@@ -19,17 +26,17 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-          <a href="loja.php">
+          <a href="vitrine.php">
             <img class="d-block" src="/TCC/img/img1.png" alt="Primeiro Slide">
           </a>
           </div>
           <div class="carousel-item">
-          <a href="loja.php">
+          <a href="vitrine.php">
             <img class="d-block" src="/TCC/img/img4.jpg" alt="Segundo Slide">
           </a>
           </div>
           <div class="carousel-item">
-            <a href="loja.php">
+            <a href="vitrine.php">
               <img class="d-block" src="/TCC/img/img3.png" alt="Terceiro Slide">
             </a>
             <div class="carousel-caption d-none d-md-block">
@@ -45,7 +52,7 @@
         </a>
       </div>
       </div>
-    </main><br><br><br><hr style="border: 1px solid;">
+    </main><br><br><br>
     <!-- footer -->
     <?php include 'footer.php'; ?>
 

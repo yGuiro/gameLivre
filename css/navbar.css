@@ -14,9 +14,13 @@
 
 }
 
+header {
+  background-color: #151414;
+}
+
 #navbar {
-    width: 100vw;
-    background-color: #192024;
+    width: 98.8vw;
+    background-color: #151414;
     font-weight: bold;
 }    
     ul {
@@ -26,6 +30,7 @@
         justify-content: flex-end;
         align-items: center;
         padding: 1em 0;
+        background-color: #151414;
     }
   
     li a {

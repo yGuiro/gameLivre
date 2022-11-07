@@ -1,3 +1,7 @@
+* {
+    color:black;
+}
+
 .box {
     background-color: black;
     background: black;
@@ -10,7 +14,7 @@
 }
 
 .login {
-    color: white;
+    color: black;
 }
 
 input {
@@ -29,3 +33,9 @@ input {
     border: 2px solid #3498DB;
     box-shadow: none;
     }
+
+.btn {
+      font-size: 25px;
+      background-color: #9370DB;
+}
+

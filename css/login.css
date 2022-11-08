@@ -39,3 +39,6 @@ input {
       background-color: #9370DB;
 }
 
+.form-title, .form-subtitle {
+    color: white;
+}

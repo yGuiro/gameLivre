@@ -5,6 +5,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <style>
         .full {
           text-align: center;
@@ -16,6 +18,7 @@
           padding: 5px 0;
           width: 250px;
           transition: border .5s;
+          color: black;
       }
 
       .slc {
@@ -26,14 +29,11 @@
         padding: 5px 0;
         width: 250px;
         margin-bottom: 3%;
-        
+        color: black;
       }
 
       #imgProduto{
         background: none;
-      }
-
-      #imgProduto {
         color: white;
       }
     </style>
@@ -48,7 +48,7 @@
    ?>
 <main class="box" style="background-color: black;"> 
     <img src="/TCC/img/logo.png" alt="logo" style="width: 20%;">
-    <form action="./php/cadastro.php" class="login" method="post">
+    <form action="./php/cadastroProduto.php" class="login" method="post">
       <h1 class="form-title" style="color:white;">Game Livre</h1>
       <h5 class="form-subtitle" style="color:white;">Cadastro de produto</h5>
 
@@ -58,15 +58,15 @@
 
       
       <select name="proposalType" class="slc">
-          <option value="">Trocar</option>
-          <option value="">Vender</option>
+          <option value="Trocar">Trocar</option>
+          <option value="Vender">Vender</option>
         </select>
         
         <select name="productType" class="slc">
-            <option value="">Jogo</option>
-            <option value="">Periférico</option>
-            <option value="">Acessórios</option>
-            <option value="">Video-game</option>
+            <option value="Jogo">Jogo</option>
+            <option value="Periferico">Periférico</option>
+            <option value="Acessorio">Acessórios</option>
+            <option value="Videogame">Video-game</option>
         </select>
 
         <p>
@@ -83,7 +83,8 @@
             <input type="file" name="itemsIMG" id="imgProduto">
         </p>
         <p class="input-row">
-        <input type="submit" value="CADASTRAR" class="btn">
+        <!-- <input type="submit" value="CADASTRAR" class="btn"> -->
+        <button type="submit" id="btnItem" class="btn btn-lg">CADASTRAR</button>
       </p>
 
     </form>
@@ -93,3 +94,9 @@
 <?php include 'C:\xampp\htdocs\TCC\php\cadastroProduto.php'; ?>
 <?php include 'footer.php'; ?>  
 </html>
+
+<script src="./js/jquery-3.6.1.min.js"></script>
+<script src="./js/sweetalert2.all.min.js"></script>
+<script>
+
+</script>

@@ -18,8 +18,11 @@ if (isset($_POST['productName']) &&
         $stmt = $pdo->prepare($sql);
         $stmt->execute(array($productName, $proposalType, $productType, $date, $description, $itemsIMG));
 
-
-        
+        if ($stmt->rowCount() > 0) {
+            echo json_encode(["icon" => "success", "title" => "Login", "text" => "Login realizado com sucesso!", "login" => true]);
+        } else {
+            echo json_encode(["icon" => "error", "title" => "Opsss...", "text" => "Erro ao realizar login", "login" => false]);
+        }
 
     }
 ?>

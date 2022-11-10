@@ -99,7 +99,7 @@
 <body>
   <main class="box" style="background-color: black;"> 
     <img src="/TCC/img/logo.png" alt="logo" style="width: 20%;">
-    <form action="./php/cadastro.php" class="login" method="post">
+    <form class="login" method="post" id="form2">
       <h1 class="form-title">Game Livre</h1>
       <h5 class="form-subtitle">Crie sua conta!</h5>
 
@@ -146,7 +146,7 @@
       </p>
 
       <p class="input-row">
-        <input type="submit" value="CADASTRAR" class="btn">
+      <button type="button" id="btnItem" class="btn btn-lg">CADASTRAR</button>
       </p>
 
     </form>
@@ -155,6 +155,37 @@
   </main>
 </body>
 </html>
+
+<script src="./js/jquery-3.6.1.min.js"></script>
+<script src="./js/sweetalert2.all.min.js"></script>
+<script>
+  $('#btnItem').on('click', function(e) {
+    // e.preventDefault();
+
+    const formdata = $('#form2').serialize();
+    
+    $.ajax({
+      type: 'POST',
+      url: './php/cadastro.php',
+      data: formdata,
+      dataType: 'json'
+    }).done(function(res) {
+      Swal.fire({
+        icon: res.icon,
+        title: res.title,
+        text: res.text,
+        showConfirmButton: true,
+        // timer: 2000
+      }).then(function() {
+        if (res.cadastro) {
+          window.location.href = './login.php';
+        } else {
+          //window.location.reload();
+        }
+      })
+    })
+  });
+</script>
 
 <?php include 'C:\xampp\htdocs\TCC\php\cadastro.php'; ?>
 <?php include 'footer.php'; ?>

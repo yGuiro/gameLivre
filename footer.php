@@ -39,7 +39,7 @@
                                 <a href="index.php"><img src="/TCC/img/logo.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Game Livre é uma plataforma de locação e venda de jogos desenvolvida por Guilherme, Rodrigo e Carlos como projeto para o Trabalho de conclusão de curso.</p>
+                                <p>Game Livre é uma plataforma de locação e venda de jogos desenvolvida por Guilherme, Rodrigo, Carlos e Pablo como projeto para o Trabalho de conclusão de curso.</p>
                             </div>
                         </div>
                     </div>

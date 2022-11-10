@@ -44,11 +44,11 @@
       <h5 class="form-subtitle">Faça seu login</h5>
 
       <p class="input-row">
-        <input type="text" placeholder="Username" name="username" id="username" class="login">
+        <input type="text" placeholder="Username" name="username" id="username" class="login" required>
       </p>
 
       <p class="input-row">
-        <input type="password" placeholder="Senha" name='senha' id='senha' class="login">
+        <input type="password" placeholder="Senha" name='senha' id='senha' class="login" required>
       </p>
       
       <p class="input-row" >
@@ -76,7 +76,7 @@
       type: 'POST',
       url: './php/login.php',
       data: form,
-      dataType: 'JSON'
+      dataType: 'JSON' 
     }).done(function(res) {
       Swal.fire({
         icon: res.icon,

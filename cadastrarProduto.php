@@ -102,7 +102,6 @@ include './php/cadastroProduto.php';
 <script src="./js/sweetalert2.all.min.js"></script>
 <script>
   $('#btnItem').on('click', function(e) {
-    // e.preventDefault();
 
     const formdata = $('#form1').serialize();
     

@@ -117,15 +117,17 @@
 
       <p class="input-row">
         <input type="password" placeholder="Senha" name="senha" class="full" required id="senha1">
+        
         <i  class="fa fa-eye" aria-hidden="true"><img onclick="mostrarSenha()" src="/TCC/img/eye.png" id='senha' alt="" class="eye"></i>
       </p>
 
       <p class="input-row">
-      <input type="text" placeholder="CEP (APENAS NÚMEROS)" name="cep" class="full" required id="cep">
+      <input  placeholder="CEP (APENAS NÚMEROS)" name="cep" class="full cep" required id="cep">
       </p>
 
       <p class="input-row">
         <input type="text" placeholder="Rua" id="rua" class="aFull" required>
+
         <input type="number" placeholder="Num." require class="nFull">
       </p> 
 
@@ -134,15 +136,16 @@
       </p> 
 
       <input type="text" placeholder="Cidade" id="cidade" class="aFull" required>
+
       <input type="text" placeholder="UF" id="uf" class="nFull" require>
       </p>
 
       <p class="input-row">
-      <input type="number" placeholder="CPF (APENAS NÚMEROS)" name="cpf" class="full" required>
+      <input placeholder="CPF (APENAS NÚMEROS)" name="cpf" class="full cpf" required>
       </p>
 
       <p class="input-row">
-      <input type="number" placeholder="Celular (APENAS NÚMEROS)" name="phoneNumber" class="full" required>
+      <input placeholder="Celular (APENAS NÚMEROS)" name="phoneNumber" class="full phone_with_ddd" required>
       </p>
 
       <p class="input-row">
@@ -158,6 +161,8 @@
 
 <script src="./js/jquery-3.6.1.min.js"></script>
 <script src="./js/sweetalert2.all.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/masks.js"></script>
 <script>
   $('#btnItem').on('click', function(e) {
     // e.preventDefault();
@@ -186,6 +191,7 @@
     })
   });
 </script>
+
 
 <?php include 'C:\xampp\htdocs\TCC\php\cadastro.php'; ?>
 <?php include 'footer.php'; ?>

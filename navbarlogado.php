@@ -8,7 +8,7 @@
                 echo '<li><a href="perfil.php">'. $_SESSION['logado'] .'</a></li>'
                 ?>
                 <li><a href="#">Minhas Propostas</a></li>
-                <li><a href="vitrine.php">Vitrine</a></li>
+                <li><a href="vitrineLogado.php">Vitrine</a></li>
                 <li><a href="#">Amigos</a></li>
                 <li><a href="sair.php">Sair</a></li>
             </ul>

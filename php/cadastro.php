@@ -19,11 +19,12 @@ if (isset($_POST['nome']) &&
         $sql = "INSERT INTO users (userName ,Name, Email, Password, phoneNumber, Address, CPF) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute(array($username, $nome, $email, $senha,$phoneNumber, $cep, $cpf));
-        // echo $stmt->rowCount() . " registro(s) inserido(s) com sucesso!!!";
-        // echo "<script type='text/javascript'> alert('Conta criada com sucesso!!!') </script>";
-        echo"<script language='javascript' type='text/javascript'>
-        alert('Conta criada com sucesso!!!');window.location
-        .href='../login.php';</script>";
+
+        if ($stmt->rowCount() > 0) {
+          echo json_encode(["icon" => "success", "title" => "Cadastro realizado com sucesso!", "text" => "Clique em OK para efetuar o login", "cadastro" => true]);
+      } else {
+          echo json_encode(["icon" => "error", "title" => "Opsss...", "text" => "Erro ao cadastrar", "cadastro" => false]);
+      }
 
   }
 ?>

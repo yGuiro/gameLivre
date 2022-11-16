@@ -107,7 +107,7 @@ include './php/cadastroProduto.php';
     
     $.ajax({
       type: 'POST',
-      url: './php/cadastroProduto.php',
+      url: './php.cadastroProduto',
       data: formdata,
       dataType: 'json'
     }).done(function(res) {

@@ -83,8 +83,7 @@
       }
 
   </style>
-  <script>
-    
+  <script>  
     function mostrarSenha() {
       let tipo = document.getElementById('senha1');
       if (tipo.type == "password") {
@@ -122,13 +121,13 @@
       </p>
 
       <p class="input-row">
-      <input  placeholder="CEP (APENAS NÚMEROS)" name="cep" class="full cep" required id="cep">
+      <input type="text" placeholder="CEP (APENAS NÚMEROS)" name="cep" class="full cep" required id="cep">
       </p>
 
       <p class="input-row">
         <input type="text" placeholder="Rua" id="rua" class="aFull" required>
 
-        <input type="number" placeholder="Num." require class="nFull">
+        <input type="number" placeholder="Num." required class="nFull">
       </p> 
 
       <p class="input-row">
@@ -141,11 +140,11 @@
       </p>
 
       <p class="input-row">
-      <input placeholder="CPF (APENAS NÚMEROS)" name="cpf" class="full cpf" required>
+      <input type="text" placeholder="CPF (APENAS NÚMEROS)" name="cpf" class="full cpf" required>
       </p>
 
       <p class="input-row">
-      <input placeholder="Celular (APENAS NÚMEROS)" name="phoneNumber" class="full phone_with_ddd" required>
+      <input type="text" placeholder="Celular (APENAS NÚMEROS)" name="phoneNumber" class="full phone_with_ddd" required>
       </p>
 
       <p class="input-row">

@@ -1,6 +1,6 @@
-<?php session_start(); ?>
-
-<?php include 'head.php';
+<?php 
+// session_start();
+include 'head.php';
 include './php/cadastroProduto.php';
 ?>
 
@@ -107,7 +107,7 @@ include './php/cadastroProduto.php';
     
     $.ajax({
       type: 'POST',
-      url: './php.cadastroProduto',
+      url: './php/cadastroProduto.php',
       data: formdata,
       dataType: 'json'
     }).done(function(res) {
@@ -119,7 +119,7 @@ include './php/cadastroProduto.php';
         // timer: 2000
       }).then(function() {
         if (res.cadastro) {
-          window.location.href = './vitrine.php';
+          window.location.href = './vitrineLogado.php';
         } else {
           //window.location.reload();
         }

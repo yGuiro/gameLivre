@@ -1,7 +1,6 @@
 <?php
-// session_start();
-
-include './php/conexao.php';
+session_start();
+include 'C:/xampp/htdocs/TCC/php/cadastro.php';
 
 
 if (isset($_POST['productName']) && 
@@ -17,9 +16,9 @@ if (isset($_POST['productName']) &&
         $productType = $_POST['productType'];
         $date = $_POST['date'];
         $description = $_POST['description'];
-        // $itemsIMG = $_POST['itemsIMG'];
+        $itemsIMG = $uploadfile;
                   
-        $sql = "INSERT INTO proposal (userName, productName ,proposalType, productType, date, description) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO proposal (`userName`, `productName`, `proposalType`,`productType`,`date`,`description`, `itemsIMG`) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
         $result = $stmt->execute(array($userName, $productName, $proposalType, $productType, $date, $description));
         // echo json_encode(["icon" => "success", "title" => "Ai sim", "text" => "Produto cadastrado com sucesso!", "cadastro" => true]);
@@ -31,3 +30,4 @@ if (isset($_POST['productName']) &&
         }
 
     }
+?>

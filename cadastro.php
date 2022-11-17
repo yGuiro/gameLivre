@@ -164,7 +164,6 @@
 <script src="./js/masks.js"></script>
 <script>
   $('#btnItem').on('click', function(e) {
-    // e.preventDefault();
 
     const formdata = $('#form2').serialize();
     

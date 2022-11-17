@@ -18,7 +18,7 @@ if (isset($_POST['nome']) &&
                   
         $sql = "INSERT INTO users (userName ,Name, Email, Password, phoneNumber, Address, CPF) VALUES (?, ?, ?, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(array($username, $nome, $email, $senha,$phoneNumber, $cep, $cpf));
+        $stmt->execute(array($username, $nome, $email, $senha, $phoneNumber, $cep, $cpf));
 
         if ($stmt->rowCount() > 0) {
           echo json_encode(["icon" => "success", "title" => "Cadastro realizado com sucesso!", "text" => "Clique em OK para efetuar o login", "cadastro" => true]);
